@@ -1,0 +1,57 @@
+{
+  "name": "new-tutorial-step-by-step",
+  "version": "0.0.0",
+  "description": "A starting project with routing, fetching data, and charting",
+  "scripts": {
+    "build": "dt-app build --prod",
+    "start": "dt-app dev",
+    "generate:function": "dt-app generate function",
+    "uninstall": "dt-app uninstall",
+    "deploy": "dt-app deploy",
+    "update": "dt-app update",
+    "info": "dt-app info",
+    "help": "dt-app help",
+    "lint": "eslint .",
+    "test:api": "jest --config=api/jest.config.js",
+    "test:e2e": "playwright test --project=chromium",
+    "test:e2e-ci": "playwright test"
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dynatrace-sdk/app-environment": "1.1.0",
+    "@dynatrace-sdk/client-query": "1.12.1",
+    "@dynatrace-sdk/error-handlers": "1.3.1",
+    "@dynatrace-sdk/navigation": "1.2.1",
+    "@dynatrace-sdk/react-hooks": "0.4.4",
+    "@dynatrace-sdk/user-preferences": "1.1.1",
+    "@dynatrace/strato-components-preview": "^0.114.12",
+    "@dynatrace/strato-icons": "0.37.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-intl": "6.4.4",
+    "react-router-dom": "^6.4.1"
+  },
+  "devDependencies": {
+    "@dynatrace/testing-platform-playwright": "4.2.1",
+    "@microsoft/eslint-plugin-sdl": "^0.2.0",
+    "@playwright/test": "^1.44.0",
+    "@types/jest": "27.4.0",
+    "@types/node": "^16.11.34",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "dotenv": "^16.4.5",
+    "dt-app": "0.122.2",
+    "eslint": "^8.15.0",
+    "eslint-plugin-no-secrets": "^0.8.9",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3"
+  }
+}
