@@ -1,14 +1,14 @@
-import { AppRoot } from "@dynatrace/strato-components";
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import { AppRoot } from "@dynatrace/strato-components";
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./app/App";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(
   <AppRoot>
     <BrowserRouter basename="ui">
       <App />
     </BrowserRouter>
-  </AppRoot>,
-  document.getElementById("root")
+  </AppRoot>
 );
