@@ -1,14 +1,14 @@
 import React from "react";
+import { Flex } from "@dynatrace/strato-components/layouts";
+import { TitleBar } from "@dynatrace/strato-components-preview/layouts";
+import { ProgressCircle } from "@dynatrace/strato-components/content";
+import { convertToTimeseries } from "@dynatrace/strato-components-preview/conversion-utilities";
 import {
   DataTable,
-  Flex,
-  TitleBar,
-  ProgressCircle,
   TableColumn,
-  convertToTimeseries,
-  IntentButton,
   TableRow,
-} from "@dynatrace/strato-components-preview";
+} from "@dynatrace/strato-components-preview/tables";
+import { IntentButton } from "@dynatrace/strato-components-preview/buttons";
 import { useDqlQuery } from "@dynatrace-sdk/react-hooks";
 import {
   CPU_USAGE_QUERY,
@@ -72,7 +72,11 @@ export const HostList = () => {
       </TitleBar>
       {result.isLoading && <ProgressCircle data-testid="progress-circle" />}
       {result.data && (
-        <DataTable data={result.data.records} columns={columns} data-testid="data-table">
+        <DataTable
+          data={result.data.records}
+          columns={columns}
+          data-testid="data-table"
+        >
           <DataTable.UserActions>
             <DataTable.RowActions>
               {(row: TableRow) => (
