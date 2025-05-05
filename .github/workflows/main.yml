@@ -39,5 +39,5 @@ jobs:
       env:
         DT_APP_OAUTH_CLIENT_ID: ${{ secrets.CLIENT_ID }}
         DT_APP_OAUTH_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-        PLAYGROUND_APP_ID: my.tutorial.github.test
+        ENVIROMENT_URL: ${{ secrets.ENVIRONMENT_URL }}
       run: npm run deploy
