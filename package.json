@@ -40,7 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "dotenv": "^16.4.5",
-    "dt-app": "0.126.2",
+    "dt-app": "0.140.1",
     "eslint": "^8.15.0",
     "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-react": "^7.29.4",
