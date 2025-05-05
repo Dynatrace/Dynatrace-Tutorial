@@ -36,4 +36,4 @@ jobs:
         DT_APP_OAUTH_CLIENT_ID: ${{ secrets.CLIENT_ID }}
         DT_APP_OAUTH_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         DT_APP_ENVIRONMENT_URL: ${{ secrets.ENVIRONMENT_URL }}
-      run: npm run deploy
+      run: echo $DT_APP_OAUTH_CLIENT_ID && $DT_APP_OAUTH_CLIENT_SECRET && $DT_APP_ENVIRONMENT_URL && npm run deploy
