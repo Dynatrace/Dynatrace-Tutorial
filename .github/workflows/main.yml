@@ -35,5 +35,5 @@ jobs:
       env:
         DT_APP_OAUTH_CLIENT_ID: ${{ secrets.CLIENT_ID }}
         DT_APP_OAUTH_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-        ENVIRONMENT_URL: ${{ secrets.ENVIRONMENT_URL }}
+        DT_APP_ENVIRONMENT_URL: ${{ secrets.ENVIRONMENT_URL }}
       run: npm run deploy
