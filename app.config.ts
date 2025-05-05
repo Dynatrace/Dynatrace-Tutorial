@@ -19,4 +19,5 @@ const config: CliOptions = {
   }
 };
 
+
 module.exports = config;
