@@ -1,7 +1,5 @@
-import { CliOptions } from "dt-app";
-
-const config: CliOptions = {
-  "environmentUrl": process.env.ENVIRONMENT_URL ?? "https://wkf10640.apps.dynatrace.com/",
+{
+  "environmentUrl": "https://ruu61410.apps.dynatrace.com/",
   "app": {
     "name": "new-tutorial",
     "version": "0.0.0",
@@ -17,7 +15,4 @@ const config: CliOptions = {
       { "name" : "app-settings:objects:read", "comment": "Deploying permission"}
     ]
   }
-};
-
-
-module.exports = config;
+}

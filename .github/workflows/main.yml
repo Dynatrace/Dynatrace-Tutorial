@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: '20'
       
-    - name: Prepare
+    - name: Install
       run: npm ci
 
     - name: Build
