@@ -47,3 +47,5 @@ Outputs help for the Dynatrace App Toolkit.
 You can find more information on how to use all the features of the new Dynatrace Platform in [Dynatrace Developer](https://dt-url.net/developers).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
