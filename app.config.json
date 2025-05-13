@@ -8,11 +8,7 @@
     "scopes": [
       { "name": "storage:buckets:read", "comment": "default template" },
       { "name": "storage:metrics:read", "comment": "default template" },
-      { "name": "storage:entities:read", "comment": "default template" },
-      { "name" : "app-engine:apps:install", "comment": "Deploying permission"}, 
-      { "name" : "app-engine:apps:delete", "comment": "Deploying permission"}, 
-      { "name" : "app-engine:apps:run", "comment": "Deploying permission"}, 
-      { "name" : "app-settings:objects:read", "comment": "Deploying permission"}
+      { "name": "storage:entities:read", "comment": "default template" }
     ]
   }
 }
