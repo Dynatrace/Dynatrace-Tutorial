@@ -33,7 +33,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intl": "6.4.4",
-    "react-router-dom": "^6.4.1"
+    "react-router-dom": "^7.17.0"
   },
   "devDependencies": {
     "@dynatrace/testing-platform-playwright": "4.4.0",
@@ -46,12 +46,12 @@
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "dotenv": "^16.4.5",
-    "dt-app": "0.126.2",
+    "dt-app": "1.10.2",
     "eslint": "^8.15.0",
     "eslint-plugin-no-secrets": "^0.8.9",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
-    "jest": "^27.4.7",
+    "jest": "^30.4.2",
     "ts-jest": "^27.1.3"
   }
 }
