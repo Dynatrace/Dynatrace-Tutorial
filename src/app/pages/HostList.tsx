@@ -8,7 +8,6 @@ import {
   TableColumn,
   TableRow,
 } from "@dynatrace/strato-components-preview/tables";
-import { IntentButton } from "@dynatrace/strato-components-preview/buttons";
 import { useDqlQuery } from "@dynatrace-sdk/react-hooks";
 import {
   CPU_USAGE_QUERY,
@@ -16,6 +15,7 @@ import {
   getHostCpuUsageQuery,
 } from "../queries";
 import { Colors } from "@dynatrace/strato-design-tokens";
+import { IntentButton } from "@dynatrace/strato-components";
 
 export const HostList = () => {
   const result = useDqlQuery({
@@ -81,7 +81,6 @@ export const HostList = () => {
             <DataTable.RowActions>
               {(row: TableRow) => (
                 <IntentButton
-                  iconOnly
                   payload={{
                     "dt.elements": [
                       {
